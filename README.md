@@ -6,10 +6,15 @@ Cordova Plugin For Multiple Image Selection - implemented for iOS and Android 4.
 # 参考
 https://github.com/Telerik-Verified-Plugins/ImagePicker.git
 
-# 本次更新注意2.3.5
-因为安卓系统安装插件时,提示edit-config冲突, 在platforms\android\app\src\main\AndroidManifest.xml 文件
+## 本次更新注意2.3.5
+如果您的安卓环境在安装插件时,提示edit-config冲突, 请手动注释config.xml文件中的这个节点,
+
+然后在platforms\android\app\src\main\AndroidManifest.xml 文件中,
+
 手动添加 application 节点属性 android:requestLegacyExternalStorage="true"
+
 (环境:ionic5,cordova9)
+
 ## Installing the plugin
 
 The plugin conforms to the Cordova plugin specification, it can be installed
